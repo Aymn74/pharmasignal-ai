@@ -1,0 +1,71 @@
+Release name: PharmaSignal AI v0.2 — Limited-validation research prototype
+Freeze date: 2026-07-18
+Python version: 3.12.10
+pytest result: 105 passed in 1.13s
+Validation Benchmark status: FAIL — validation incomplete
+Completed drug-event cases: 7/30
+Completed class-level scenarios: 1/6
+Failure-mode tests: 4/4 passed
+
+GOLD FILE SHA-256
+benchmark/benchmark_cases.json  43C4D2B05B02A9D44456DF371E2115D63D1F5B0A951DAC1A1EB01B52CA0938B1
+benchmark/class_scenarios.json   E5CBDF285B8D08CAABF849323C40B35233F69B05DD69C22C4BB75939FFD4464B
+
+CORE FILE SHA-256
+app.py                                      75A46482CF7AD195D7DC5C23326E6D0D9ADEF21457AEFE0F7677DC8E1CE31517
+data_sources.py                             BF5D1D6D10F6544B7E73555676E04D72BC750BB0A0E3961043E9D4BF85EDA0E5
+event_analysis.py                           060032401536F35E28AEBD0EE80FE96663B8A256F2C1E7840A03D7EF5F7A17B5
+MINIMUM_VALIDATION_REPORT.md                B792CA7F876629FD6ACF76C9E4B089B5EB87DDBB466F1422F84DEBA056A8081C
+models.py                                   A6B1C92CC67C9D0353930DAA8354387AA1C6537A4C45AB643B0D1A371800E767
+RELEASE_NOTES_v0.2.md                       E26CF04C0671B95BA117769FD583F39A59D005FFF2018799D85058A76A44FF15
+spl_parser.py                               E1321EE5C4FD1F1DCE7DA51869814592BE963E7D85AC4A20ACABD1D66EB07683
+spl_qa.py                                   B6670B828D80AC6E1EB87A92C7D2B623A66613EE8DC6B75DCBD819D0D5387D17
+structured_evidence.py                      C913BE77452B77965233BE21A57B8F6D54868BF5CF2067E6318A95792B2E127D
+benchmark/run_validation_benchmark.py       94C8850E0B00EA168485913323602AC57A31804243171DD600548C4C452EBD02
+
+RELEASE PACKAGE FILES (alphabetical)
+app.py
+benchmark/__init__.py
+benchmark/benchmark_cases.json
+benchmark/benchmark_results.json
+benchmark/class_scenarios.json
+benchmark/failure_harness.py
+benchmark/README.md
+benchmark/run_validation_benchmark.py
+benchmark/test_benchmark_integrity.py
+benchmark/test_failure_modes.py
+data_sources.py
+event_analysis.py
+LICENSES.md
+MINIMUM_VALIDATION_REPORT.md
+models.py
+README.md
+RELEASE_MANIFEST_v0.2.txt
+RELEASE_NOTES_v0.2.md
+requirements.txt
+run.bat
+spl_parser.py
+spl_qa.py
+structured_evidence.py
+supabase_schema.sql
+test_structured_evidence.py
+test_unified_event_analysis.py
+VALIDATION_REPORT.md
+
+PACKAGE LIMITS
+- The package freezes a limited-validation research prototype, not a completed validation benchmark.
+- Only 7/30 item cases and 1/6 class scenarios have completed manual gold review.
+- Human review remains required.
+- The package does not claim clinical validation, production readiness, causality, or comprehensive pharmacovigilance coverage.
+- Runtime access to external data services is still required unless an existing fallback applies.
+
+EXCLUSIONS
+- .venv and virtual-environment contents
+- __pycache__, .pytest_cache, and other caches
+- .git metadata
+- .env, environment files, API keys, credentials, and secrets
+- ZIP archives and prior backup archives
+- temporary files and IDE metadata
+- prior benchmark gold snapshots named benchmark_cases.before-*.json
+- manual-review working reports containing local paths: EP01_EP03_QUOTE_MISMATCH_AUDIT.md, EP01_EP03_SPL_VERSION_OPTIONS.md, EP02_MANUAL_REREVIEW_VERSION2.md, FC01_AMLODIPINE_NAUSEA_MANUAL_REVIEW.md, IC01_LINEZOLID_MANUAL_REVIEW.md, IC01_MANUAL_REVIEW.md, and NF01_MANUAL_REVIEW.md
+- PRE_POST_EVALUATOR_DIFF.md, which is not required to run or audit this frozen validation result

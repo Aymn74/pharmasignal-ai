@@ -1,0 +1,832 @@
+{
+  "benchmark_version": "pharmasignal-v0.2-validation-benchmark-v1",
+  "extraction_rules_version": "structured-event-evidence-v1",
+  "evaluation_date": "2026-07-18",
+  "total_cases": 30,
+  "completed_cases": 7,
+  "cases_needing_review": 23,
+  "total_class_scenarios": 6,
+  "completed_class_scenarios": 1,
+  "class_scenarios_needing_review": 5,
+  "metrics": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "status_macro_f1": 1.0,
+    "per_status": {
+      "explicit_positive": {
+        "support": 4,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "related_but_not_explicit": {
+        "support": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      },
+      "negated": {
+        "support": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "historical_or_preexisting": {
+        "support": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      },
+      "comparator_only": {
+        "support": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      },
+      "interaction_dependent": {
+        "support": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "not_found": {
+        "support": 1,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "insufficient_label_data": {
+        "support": 0,
+        "precision": null,
+        "recall": null,
+        "f1": null
+      }
+    },
+    "explicit_positive_precision": 1.0,
+    "explicit_positive_recall": 1.0,
+    "negation_accuracy": 1.0,
+    "interaction_dependent_accuracy": 1.0,
+    "context_accuracy": 1.0,
+    "frequency_exact_match_accuracy": 1.0,
+    "comparator_exact_match_accuracy": 1.0,
+    "section_accuracy": 1.0,
+    "supporting_quote_accuracy": 1.0,
+    "source_path_completeness": 1.0,
+    "supporting_quote_completeness": 1.0,
+    "traceability_completeness": 0.8333333333333334,
+    "unsupported_positive_count": 0,
+    "deterministic_output_rate": 1.0,
+    "manually_completed_case_count": 7,
+    "evaluated_case_count": 7,
+    "version_incomplete_case_count": 0,
+    "confusion_matrix": {
+      "explicit_positive": {
+        "explicit_positive": 4,
+        "related_but_not_explicit": 0,
+        "negated": 0,
+        "historical_or_preexisting": 0,
+        "comparator_only": 0,
+        "interaction_dependent": 0,
+        "not_found": 0,
+        "insufficient_label_data": 0
+      },
+      "related_but_not_explicit": {
+        "explicit_positive": 0,
+        "related_but_not_explicit": 0,
+        "negated": 0,
+        "historical_or_preexisting": 0,
+        "comparator_only": 0,
+        "interaction_dependent": 0,
+        "not_found": 0,
+        "insufficient_label_data": 0
+      },
+      "negated": {
+        "explicit_positive": 0,
+        "related_but_not_explicit": 0,
+        "negated": 1,
+        "historical_or_preexisting": 0,
+        "comparator_only": 0,
+        "interaction_dependent": 0,
+        "not_found": 0,
+        "insufficient_label_data": 0
+      },
+      "historical_or_preexisting": {
+        "explicit_positive": 0,
+        "related_but_not_explicit": 0,
+        "negated": 0,
+        "historical_or_preexisting": 0,
+        "comparator_only": 0,
+        "interaction_dependent": 0,
+        "not_found": 0,
+        "insufficient_label_data": 0
+      },
+      "comparator_only": {
+        "explicit_positive": 0,
+        "related_but_not_explicit": 0,
+        "negated": 0,
+        "historical_or_preexisting": 0,
+        "comparator_only": 0,
+        "interaction_dependent": 0,
+        "not_found": 0,
+        "insufficient_label_data": 0
+      },
+      "interaction_dependent": {
+        "explicit_positive": 0,
+        "related_but_not_explicit": 0,
+        "negated": 0,
+        "historical_or_preexisting": 0,
+        "comparator_only": 0,
+        "interaction_dependent": 1,
+        "not_found": 0,
+        "insufficient_label_data": 0
+      },
+      "not_found": {
+        "explicit_positive": 0,
+        "related_but_not_explicit": 0,
+        "negated": 0,
+        "historical_or_preexisting": 0,
+        "comparator_only": 0,
+        "interaction_dependent": 0,
+        "not_found": 1,
+        "insufficient_label_data": 0
+      },
+      "insufficient_label_data": {
+        "explicit_positive": 0,
+        "related_but_not_explicit": 0,
+        "negated": 0,
+        "historical_or_preexisting": 0,
+        "comparator_only": 0,
+        "interaction_dependent": 0,
+        "not_found": 0,
+        "insufficient_label_data": 0
+      }
+    }
+  },
+  "records": [
+    {
+      "case_id": "EP-01",
+      "evaluation_eligible": true,
+      "evaluation_incomplete_reason": null,
+      "spl_version_validation": {
+        "valid": true,
+        "status": "fixed_spl_version_verified",
+        "fixed_spl_version": "4",
+        "fixed_effective_time": "20260714",
+        "actual_spl_version": "4",
+        "actual_effective_time": "20260714",
+        "effective_time_match": true,
+        "effective_time_failure_reason": null
+      },
+      "expected_status": "explicit_positive",
+      "predicted_status": "explicit_positive",
+      "status_correct": true,
+      "predicted_assertion": "present",
+      "predicted_subject": "selected_drug",
+      "predicted_context": [
+        "warning"
+      ],
+      "predicted_section": "5 WARNINGS AND PRECAUTIONS",
+      "predicted_subsection": "5.2 Serotonin Syndrome",
+      "predicted_frequency_text": null,
+      "predicted_frequency_value": null,
+      "predicted_frequency_unit": null,
+      "predicted_comparator_text": null,
+      "matching_evidence_item_count": 11,
+      "assertion_correct": true,
+      "subject_correct": true,
+      "context_correct": true,
+      "frequency_correct": true,
+      "comparator_correct": true,
+      "section_correct": true,
+      "deterministic": true,
+      "traceability": {
+        "supporting_quote": true,
+        "source_path": true,
+        "chunk_hash": true,
+        "set_id": true,
+        "event_or_synonym": true,
+        "classification_supported": true
+      },
+      "predicted_item": {
+        "drug_name": "trazodone",
+        "rxcui": "10737",
+        "normalized_event": "serotonin syndrome",
+        "matched_term": "serotonin syndrome",
+        "evidence_status": "explicit_positive",
+        "assertion": "present",
+        "subject": "selected_drug",
+        "section_code": "43685-7",
+        "section_title": "5 WARNINGS AND PRECAUTIONS",
+        "subsection_title": "5.2 Serotonin Syndrome",
+        "evidence_context": [
+          "warning"
+        ],
+        "frequency_text": null,
+        "frequency_value": null,
+        "frequency_unit": null,
+        "comparator_text": null,
+        "population_context": [],
+        "dose_context": [],
+        "interaction_context": [],
+        "temporal_context": [],
+        "route_context": [
+          "unrestricted_route"
+        ],
+        "postmarketing_only": false,
+        "source_text": "Serotonin-norepinephrine reuptake inhibitors (SNRIs) and SSRIs, including trazodone, can precipitate serotonin syndrome, a potentially life-threatening condition. The risk is increased with concomitant use of other serotonergic drugs (including triptans, tricyclic antidepressants, fentanyl, lithium, tramadol, tryptophan, buspirone, and St. John's Wort) and with drugs that impair metabolism of serotonin, i.e., MAOIs [see Contraindications ( 4 ), Drug Interactions ( 7.1 )] . Serotonin syndrome can also occur when these drugs are used alone.",
+        "supporting_quote": "Serotonin-norepinephrine reuptake inhibitors (SNRIs) and SSRIs, including trazodone, can precipitate serotonin syndrome, a potentially life-threatening condition.",
+        "chunk_type": "paragraph",
+        "source_path": "section[2]/subsection[1]/paragraph[0]",
+        "chunk_hash": "2eab459ba1d518da677fe22377ae00c567cc04b34b894647f4b335b12736d807",
+        "extraction_method": "deterministic_rules_v1",
+        "extraction_confidence": "high",
+        "mentioned_in_sections": [
+          "5.2 Serotonin Syndrome"
+        ],
+        "source_paths": [
+          "section[2]/subsection[1]/paragraph[0]"
+        ],
+        "chunk_hashes": [
+          "2eab459ba1d518da677fe22377ae00c567cc04b34b894647f4b335b12736d807"
+        ]
+      },
+      "quote_scored": true,
+      "quote_match": true,
+      "expected_supporting_quote": "Serotonin-norepinephrine reuptake inhibitors (SNRIs) and SSRIs, including trazodone, can precipitate serotonin syndrome, a potentially life-threatening condition.",
+      "predicted_supporting_quote": "Serotonin-norepinephrine reuptake inhibitors (SNRIs) and SSRIs, including trazodone, can precipitate serotonin syndrome, a potentially life-threatening condition.",
+      "quote_mismatch_reason": null
+    },
+    {
+      "case_id": "EP-02",
+      "evaluation_eligible": true,
+      "evaluation_incomplete_reason": null,
+      "spl_version_validation": {
+        "valid": true,
+        "status": "fixed_spl_version_verified",
+        "fixed_spl_version": "2",
+        "fixed_effective_time": "20260630",
+        "actual_spl_version": "2",
+        "actual_effective_time": "20260630",
+        "effective_time_match": true,
+        "effective_time_failure_reason": null
+      },
+      "expected_status": "explicit_positive",
+      "predicted_status": "explicit_positive",
+      "status_correct": true,
+      "predicted_assertion": "present",
+      "predicted_subject": "selected_drug",
+      "predicted_context": [
+        "warning"
+      ],
+      "predicted_section": "5 WARNINGS AND PRECAUTIONS",
+      "predicted_subsection": "5.2 Serotonin Syndrome",
+      "predicted_frequency_text": null,
+      "predicted_frequency_value": null,
+      "predicted_frequency_unit": null,
+      "predicted_comparator_text": null,
+      "matching_evidence_item_count": 13,
+      "assertion_correct": true,
+      "subject_correct": true,
+      "context_correct": true,
+      "frequency_correct": true,
+      "comparator_correct": true,
+      "section_correct": true,
+      "deterministic": true,
+      "traceability": {
+        "supporting_quote": true,
+        "source_path": true,
+        "chunk_hash": true,
+        "set_id": true,
+        "event_or_synonym": true,
+        "classification_supported": true
+      },
+      "predicted_item": {
+        "drug_name": "sertraline",
+        "rxcui": "36437",
+        "normalized_event": "serotonin syndrome",
+        "matched_term": "serotonin syndrome",
+        "evidence_status": "explicit_positive",
+        "assertion": "present",
+        "subject": "selected_drug",
+        "section_code": "43685-7",
+        "section_title": "5 WARNINGS AND PRECAUTIONS",
+        "subsection_title": "5.2 Serotonin Syndrome",
+        "evidence_context": [
+          "warning"
+        ],
+        "frequency_text": null,
+        "frequency_value": null,
+        "frequency_unit": null,
+        "comparator_text": null,
+        "population_context": [],
+        "dose_context": [],
+        "interaction_context": [],
+        "temporal_context": [],
+        "route_context": [
+          "unrestricted_route"
+        ],
+        "postmarketing_only": false,
+        "source_text": "Serotonin-norepinephrine reuptake inhibitors (SNRIs) and selective serotonin reuptake inhibitors (SSRIs), including sertraline hydrochloride, can precipitate serotonin syndrome, a potentially life-threatening condition. The risk is increased with concomitant use of other serotonergic drugs (including triptans, tricyclic antidepressants, fentanyl, lithium, tramadol, meperidine, methadone, tryptophan, buspirone, amphetamines, and St. John’s Wort) and with drugs that impair metabolism of serotonin, i.e., MAOIs [ See Contraindications ( 4 ), Drug Interactions ( 7.1 ) ]. Serotonin syndrome can also occur when these drugs are used alone.",
+        "supporting_quote": "Serotonin-norepinephrine reuptake inhibitors (SNRIs) and selective serotonin reuptake inhibitors (SSRIs), including sertraline hydrochloride, can precipitate serotonin syndrome, a potentially life-threatening condition.",
+        "chunk_type": "paragraph",
+        "source_path": "section[2]/subsection[1]/paragraph[0]",
+        "chunk_hash": "267e3888fc33070315ff35c748a24daae669a6a502551dbc4316cbc1a27ce3da",
+        "extraction_method": "deterministic_rules_v1",
+        "extraction_confidence": "high",
+        "mentioned_in_sections": [
+          "5.2 Serotonin Syndrome"
+        ],
+        "source_paths": [
+          "section[2]/subsection[1]/paragraph[0]"
+        ],
+        "chunk_hashes": [
+          "267e3888fc33070315ff35c748a24daae669a6a502551dbc4316cbc1a27ce3da"
+        ]
+      },
+      "quote_scored": true,
+      "quote_match": true,
+      "expected_supporting_quote": "Serotonin-norepinephrine reuptake inhibitors (SNRIs) and selective serotonin reuptake inhibitors (SSRIs), including sertraline hydrochloride, can precipitate serotonin syndrome, a potentially life-threatening condition.",
+      "predicted_supporting_quote": "Serotonin-norepinephrine reuptake inhibitors (SNRIs) and selective serotonin reuptake inhibitors (SSRIs), including sertraline hydrochloride, can precipitate serotonin syndrome, a potentially life-threatening condition.",
+      "quote_mismatch_reason": null
+    },
+    {
+      "case_id": "EP-03",
+      "evaluation_eligible": true,
+      "evaluation_incomplete_reason": null,
+      "spl_version_validation": {
+        "valid": true,
+        "status": "fixed_spl_version_verified",
+        "fixed_spl_version": "1",
+        "fixed_effective_time": "20260622",
+        "actual_spl_version": "1",
+        "actual_effective_time": "20260622",
+        "effective_time_match": true,
+        "effective_time_failure_reason": null
+      },
+      "expected_status": "explicit_positive",
+      "predicted_status": "explicit_positive",
+      "status_correct": true,
+      "predicted_assertion": "present",
+      "predicted_subject": "selected_drug",
+      "predicted_context": [
+        "warning"
+      ],
+      "predicted_section": "5 WARNINGS AND PRECAUTIONS",
+      "predicted_subsection": "5.2 Serotonin Syndrome",
+      "predicted_frequency_text": null,
+      "predicted_frequency_value": null,
+      "predicted_frequency_unit": null,
+      "predicted_comparator_text": null,
+      "matching_evidence_item_count": 12,
+      "assertion_correct": true,
+      "subject_correct": true,
+      "context_correct": true,
+      "frequency_correct": true,
+      "comparator_correct": true,
+      "section_correct": true,
+      "deterministic": true,
+      "traceability": {
+        "supporting_quote": true,
+        "source_path": true,
+        "chunk_hash": true,
+        "set_id": true,
+        "event_or_synonym": true,
+        "classification_supported": true
+      },
+      "predicted_item": {
+        "drug_name": "fluoxetine",
+        "rxcui": "4493",
+        "normalized_event": "serotonin syndrome",
+        "matched_term": "serotonin syndrome",
+        "evidence_status": "explicit_positive",
+        "assertion": "present",
+        "subject": "selected_drug",
+        "section_code": "43685-7",
+        "section_title": "5 WARNINGS AND PRECAUTIONS",
+        "subsection_title": "5.2 Serotonin Syndrome",
+        "evidence_context": [
+          "warning"
+        ],
+        "frequency_text": null,
+        "frequency_value": null,
+        "frequency_unit": null,
+        "comparator_text": null,
+        "population_context": [],
+        "dose_context": [],
+        "interaction_context": [],
+        "temporal_context": [],
+        "route_context": [
+          "unrestricted_route"
+        ],
+        "postmarketing_only": false,
+        "source_text": "Selective serotonin reuptake inhibitors (SSRIs), including fluoxetine, can precipitate serotonin syndrome, a potentially life-threatening condition. The risk is increased with concomitant use ofother serotonergic drugs (including triptans, tricyclic antidepressants, fentanyl, lithium, tramadol, tryptophan, meperidine, methadone, buspirone, amphetamines, and St. John’s Wort) and with drugs that impair metabolism of serotonin, i.e., MAOIs [see Contraindications (4) , Drug Interactions (7.1) ] . Serotonin syndrome can also occur when these drugs are used alone.",
+        "supporting_quote": "Selective serotonin reuptake inhibitors (SSRIs), including fluoxetine, can precipitate serotonin syndrome, a potentially life-threatening condition.",
+        "chunk_type": "paragraph",
+        "source_path": "section[2]/subsection[1]/paragraph[0]",
+        "chunk_hash": "78b701047479daa9956c44751233b95a99950538b4169b91b010673018753ff4",
+        "extraction_method": "deterministic_rules_v1",
+        "extraction_confidence": "high",
+        "mentioned_in_sections": [
+          "5.2 Serotonin Syndrome"
+        ],
+        "source_paths": [
+          "section[2]/subsection[1]/paragraph[0]"
+        ],
+        "chunk_hashes": [
+          "78b701047479daa9956c44751233b95a99950538b4169b91b010673018753ff4"
+        ]
+      },
+      "quote_scored": true,
+      "quote_match": true,
+      "expected_supporting_quote": "Selective serotonin reuptake inhibitors (SSRIs), including fluoxetine, can precipitate serotonin syndrome, a potentially life-threatening condition.",
+      "predicted_supporting_quote": "Selective serotonin reuptake inhibitors (SSRIs), including fluoxetine, can precipitate serotonin syndrome, a potentially life-threatening condition.",
+      "quote_mismatch_reason": null
+    },
+    {
+      "case_id": "IC-01",
+      "evaluation_eligible": true,
+      "evaluation_incomplete_reason": null,
+      "spl_version_validation": {
+        "valid": true,
+        "status": "fixed_spl_version_verified",
+        "fixed_spl_version": "17",
+        "fixed_effective_time": "20260715",
+        "actual_spl_version": "17",
+        "actual_effective_time": "20260715",
+        "effective_time_match": true,
+        "effective_time_failure_reason": null
+      },
+      "expected_status": "interaction_dependent",
+      "predicted_status": "interaction_dependent",
+      "status_correct": true,
+      "predicted_assertion": "conditional",
+      "predicted_subject": "selected_drug",
+      "predicted_context": [
+        "warning"
+      ],
+      "predicted_section": "5 WARNINGS AND PRECAUTIONS",
+      "predicted_subsection": "5.3 Serotonin Syndrome",
+      "predicted_frequency_text": null,
+      "predicted_frequency_value": null,
+      "predicted_frequency_unit": null,
+      "predicted_comparator_text": null,
+      "matching_evidence_item_count": 6,
+      "assertion_correct": true,
+      "subject_correct": true,
+      "context_correct": true,
+      "frequency_correct": true,
+      "comparator_correct": true,
+      "section_correct": true,
+      "deterministic": true,
+      "traceability": {
+        "supporting_quote": true,
+        "source_path": true,
+        "chunk_hash": true,
+        "set_id": true,
+        "event_or_synonym": true,
+        "classification_supported": true
+      },
+      "predicted_item": {
+        "drug_name": "linezolid",
+        "rxcui": "190376",
+        "normalized_event": "serotonin syndrome",
+        "matched_term": "serotonin syndrome",
+        "evidence_status": "interaction_dependent",
+        "assertion": "conditional",
+        "subject": "selected_drug",
+        "section_code": "43685-7",
+        "section_title": "5 WARNINGS AND PRECAUTIONS",
+        "subsection_title": "5.3 Serotonin Syndrome",
+        "evidence_context": [
+          "warning"
+        ],
+        "frequency_text": null,
+        "frequency_value": null,
+        "frequency_unit": null,
+        "comparator_text": null,
+        "population_context": [],
+        "dose_context": [],
+        "interaction_context": [
+          "concomitant use"
+        ],
+        "temporal_context": [],
+        "route_context": [
+          "unrestricted_route"
+        ],
+        "postmarketing_only": false,
+        "source_text": "Spontaneous reports of serotonin syndrome including fatal cases associated with the concomitant use of linezolid and serotonergic agents have been reported. Commonly used serotonergic agents include serotonin reuptake inhibitors, serotonin-norepinephrine reuptake inhibitors, tricyclic antidepressants, buspirone, serotonin 5-HT1 receptor agonists (triptans), and opioids, including meperidine. Symptoms associated with serotonin syndrome may include hyperthermia, diaphoresis, agitation, hyperreflexia, clonus, pyrexia, opsoclonus, muscle rigidity, tremor, and hypertonia. Monitor patients for the emergence of serotonin syndrome with the concomitant use of Linezolid and serotonergic agents or with use of Linezolid in patients with carcinoid syndrome. If signs or symptoms of serotonin syndrome occur, consider discontinuing Linezolid and/or concomitant serotonergic agents as clinically appropriate and initiate supportive treatment. Inform patients of the increased risk of serotonin syndrome when Linezolid is used concomitantly with serotonergic agents.",
+        "supporting_quote": "Spontaneous reports of serotonin syndrome including fatal cases associated with the concomitant use of linezolid and serotonergic agents have been reported.",
+        "chunk_type": "paragraph",
+        "source_path": "section[1]/subsection[2]/paragraph[0]",
+        "chunk_hash": "7e97b8fdd2e01ddf60f60f5a97776550eb3f24a7149aa404d6132ed4534a1cdd",
+        "extraction_method": "deterministic_rules_v1",
+        "extraction_confidence": "high",
+        "mentioned_in_sections": [
+          "5.3 Serotonin Syndrome"
+        ],
+        "source_paths": [
+          "section[1]/subsection[2]/paragraph[0]"
+        ],
+        "chunk_hashes": [
+          "7e97b8fdd2e01ddf60f60f5a97776550eb3f24a7149aa404d6132ed4534a1cdd"
+        ]
+      },
+      "quote_scored": true,
+      "quote_match": true,
+      "expected_supporting_quote": "Spontaneous reports of serotonin syndrome including fatal cases associated with the concomitant use of linezolid and serotonergic agents have been reported.",
+      "predicted_supporting_quote": "Spontaneous reports of serotonin syndrome including fatal cases associated with the concomitant use of linezolid and serotonergic agents have been reported.",
+      "quote_mismatch_reason": null
+    },
+    {
+      "case_id": "FC-01",
+      "evaluation_eligible": true,
+      "evaluation_incomplete_reason": null,
+      "spl_version_validation": {
+        "valid": true,
+        "status": "fixed_spl_version_verified",
+        "fixed_spl_version": "16",
+        "fixed_effective_time": "20260701",
+        "actual_spl_version": "16",
+        "actual_effective_time": "20260701",
+        "effective_time_match": true,
+        "effective_time_failure_reason": null
+      },
+      "expected_status": "explicit_positive",
+      "predicted_status": "explicit_positive",
+      "status_correct": true,
+      "predicted_assertion": "present",
+      "predicted_subject": "selected_drug",
+      "predicted_context": [
+        "adverse_reaction",
+        "clinical_trial"
+      ],
+      "predicted_section": "6 ADVERSE REACTIONS",
+      "predicted_subsection": "6.1 Clinical Trials Experience",
+      "predicted_frequency_text": "2.9%",
+      "predicted_frequency_value": 2.9,
+      "predicted_frequency_unit": "percent",
+      "predicted_comparator_text": "Placebo 1.9%",
+      "matching_evidence_item_count": 1,
+      "assertion_correct": true,
+      "subject_correct": true,
+      "context_correct": true,
+      "frequency_correct": true,
+      "comparator_correct": true,
+      "section_correct": true,
+      "deterministic": true,
+      "traceability": {
+        "supporting_quote": true,
+        "source_path": true,
+        "chunk_hash": true,
+        "set_id": true,
+        "event_or_synonym": true,
+        "classification_supported": true
+      },
+      "predicted_item": {
+        "drug_name": "amlodipine",
+        "rxcui": "17767",
+        "normalized_event": "nausea",
+        "matched_term": "nausea",
+        "evidence_status": "explicit_positive",
+        "assertion": "present",
+        "subject": "selected_drug",
+        "section_code": "34084-4",
+        "section_title": "6 ADVERSE REACTIONS",
+        "subsection_title": "6.1 Clinical Trials Experience",
+        "evidence_context": [
+          "adverse_reaction",
+          "clinical_trial"
+        ],
+        "frequency_text": "2.9%",
+        "frequency_value": 2.9,
+        "frequency_unit": "percent",
+        "comparator_text": "Placebo 1.9%",
+        "population_context": [],
+        "dose_context": [],
+        "interaction_context": [],
+        "temporal_context": [],
+        "route_context": [
+          "unrestricted_route"
+        ],
+        "postmarketing_only": false,
+        "source_text": "Column 1: Nausea | Amlodipine besylate (%): 2.9 | Placebo (%): 1.9",
+        "supporting_quote": "Column 1: Nausea | Amlodipine besylate (%): 2.9 | Placebo (%): 1.9",
+        "chunk_type": "table_row",
+        "source_path": "section[2]/subsection[0]/table[1]/row[3]",
+        "chunk_hash": "0255aeaa5926de1f894127616db2d70ad41577a2a0b70ba6fcefd78a1a30e565",
+        "extraction_method": "deterministic_rules_v1",
+        "extraction_confidence": "high",
+        "mentioned_in_sections": [
+          "6.1 Clinical Trials Experience"
+        ],
+        "source_paths": [
+          "section[2]/subsection[0]/table[1]/row[3]"
+        ],
+        "chunk_hashes": [
+          "0255aeaa5926de1f894127616db2d70ad41577a2a0b70ba6fcefd78a1a30e565"
+        ]
+      },
+      "quote_scored": true,
+      "quote_match": true,
+      "expected_supporting_quote": "Nausea | Amlodipine besylate (%): 2.9 | Placebo (%): 1.9",
+      "predicted_supporting_quote": "Column 1: Nausea | Amlodipine besylate (%): 2.9 | Placebo (%): 1.9",
+      "quote_mismatch_reason": null
+    },
+    {
+      "case_id": "NC-01",
+      "evaluation_eligible": true,
+      "evaluation_incomplete_reason": null,
+      "spl_version_validation": {
+        "valid": true,
+        "status": "fixed_spl_version_verified",
+        "fixed_spl_version": "1",
+        "fixed_effective_time": "20260709",
+        "actual_spl_version": "1",
+        "actual_effective_time": "20260709",
+        "effective_time_match": true,
+        "effective_time_failure_reason": null
+      },
+      "expected_status": "negated",
+      "predicted_status": "negated",
+      "status_correct": true,
+      "predicted_assertion": "absent",
+      "predicted_subject": "selected_drug",
+      "predicted_context": [
+        "warning",
+        "clinical_trial"
+      ],
+      "predicted_section": "5 WARNINGS AND PRECAUTIONS",
+      "predicted_subsection": "5.3 Peripheral Neuropathy",
+      "predicted_frequency_text": null,
+      "predicted_frequency_value": null,
+      "predicted_frequency_unit": null,
+      "predicted_comparator_text": null,
+      "matching_evidence_item_count": 3,
+      "assertion_correct": true,
+      "subject_correct": true,
+      "context_correct": true,
+      "frequency_correct": true,
+      "comparator_correct": true,
+      "section_correct": true,
+      "deterministic": true,
+      "traceability": {
+        "supporting_quote": true,
+        "source_path": true,
+        "chunk_hash": true,
+        "set_id": true,
+        "event_or_synonym": true,
+        "classification_supported": false
+      },
+      "predicted_item": {
+        "drug_name": "Dapsone gel 5%",
+        "rxcui": "3108",
+        "normalized_event": "peripheral neuropathy",
+        "matched_term": "peripheral neuropathy",
+        "evidence_status": "negated",
+        "assertion": "absent",
+        "subject": "selected_drug",
+        "section_code": "43685-7",
+        "section_title": "5 WARNINGS AND PRECAUTIONS",
+        "subsection_title": "5.3 Peripheral Neuropathy",
+        "evidence_context": [
+          "warning",
+          "clinical_trial"
+        ],
+        "frequency_text": null,
+        "frequency_value": null,
+        "frequency_unit": null,
+        "comparator_text": null,
+        "population_context": [],
+        "dose_context": [],
+        "interaction_context": [],
+        "temporal_context": [],
+        "route_context": [
+          "topical",
+          "gel",
+          "matching_route"
+        ],
+        "postmarketing_only": false,
+        "source_text": "Peripheral neuropathy (motor loss and muscle weakness) has been reported with oral dapsone treatment. No events of peripheral neuropathy were observed in clinical trials with topical dapsone gel, 5% treatment.",
+        "supporting_quote": "No events of peripheral neuropathy were observed in clinical trials with topical dapsone gel, 5% treatment.",
+        "chunk_type": "paragraph",
+        "source_path": "section[1]/subsection[2]/paragraph[0]",
+        "chunk_hash": "9444188ac2dbc0551bbae236bf1f8fd5afe47d6ae383845a109ed65d1586071d",
+        "extraction_method": "deterministic_rules_v1",
+        "extraction_confidence": "high",
+        "mentioned_in_sections": [
+          "5.3 Peripheral Neuropathy"
+        ],
+        "source_paths": [
+          "section[1]/subsection[2]/paragraph[0]"
+        ],
+        "chunk_hashes": [
+          "9444188ac2dbc0551bbae236bf1f8fd5afe47d6ae383845a109ed65d1586071d"
+        ]
+      },
+      "quote_scored": true,
+      "quote_match": true,
+      "expected_supporting_quote": "No events of peripheral neuropathy were observed in clinical trials with topical dapsone gel, 5% treatment.",
+      "predicted_supporting_quote": "No events of peripheral neuropathy were observed in clinical trials with topical dapsone gel, 5% treatment.",
+      "quote_mismatch_reason": null
+    },
+    {
+      "case_id": "NF-01",
+      "evaluation_eligible": true,
+      "evaluation_incomplete_reason": null,
+      "spl_version_validation": {
+        "valid": true,
+        "status": "fixed_spl_version_verified",
+        "fixed_spl_version": "1",
+        "fixed_effective_time": "20260706",
+        "actual_spl_version": "1",
+        "actual_effective_time": "20260706",
+        "effective_time_match": true,
+        "effective_time_failure_reason": null
+      },
+      "expected_status": "not_found",
+      "predicted_status": "not_found",
+      "status_correct": true,
+      "predicted_assertion": null,
+      "predicted_subject": null,
+      "predicted_context": [],
+      "predicted_section": null,
+      "predicted_subsection": null,
+      "predicted_frequency_text": null,
+      "predicted_frequency_value": null,
+      "predicted_frequency_unit": null,
+      "predicted_comparator_text": null,
+      "matching_evidence_item_count": 0,
+      "assertion_correct": true,
+      "subject_correct": true,
+      "context_correct": true,
+      "frequency_correct": true,
+      "comparator_correct": true,
+      "section_correct": true,
+      "deterministic": true,
+      "traceability": null,
+      "predicted_item": null,
+      "quote_scored": false,
+      "quote_match": null,
+      "expected_supporting_quote": null,
+      "predicted_supporting_quote": null,
+      "quote_mismatch_reason": "not_scored_no_expected_supporting_quote"
+    }
+  ],
+  "class_scenario_results": [
+    {
+      "scenario_id": "CLASS-POS-01",
+      "evaluated": true,
+      "evaluation_incomplete_reason": null,
+      "expected_class_assessment": "consistent_label_evidence",
+      "predicted_class_assessment": "consistent_label_evidence",
+      "correct": true
+    }
+  ],
+  "failure_tests": {
+    "dailymed_timeout": {
+      "passed": true,
+      "outcome": "openfda_fallback"
+    },
+    "openfda_timeout": {
+      "passed": true,
+      "outcome": "insufficient_label_data"
+    },
+    "malformed_spl_xml": {
+      "passed": true,
+      "outcome": "openfda_fallback"
+    },
+    "empty_safety_sections": {
+      "passed": true,
+      "outcome": "insufficient_label_data"
+    }
+  },
+  "case_errors": [],
+  "validation_completeness": {
+    "complete": false,
+    "expected_item_cases": 30,
+    "item_case_slots": 30,
+    "missing_item_case_slots": 0,
+    "completed_item_cases": 7,
+    "item_cases_needing_review": 23,
+    "evaluated_item_cases": 7,
+    "completed_item_cases_not_evaluated": 0,
+    "expected_class_scenarios": 6,
+    "class_scenario_slots": 6,
+    "missing_class_scenario_slots": 0,
+    "completed_class_scenarios": 1,
+    "class_scenarios_needing_review": 5,
+    "evaluated_class_scenarios": 1,
+    "completed_class_scenarios_not_evaluated": 0,
+    "coverage": {
+      "explicit_positive": 4,
+      "interaction_or_conditional": 1,
+      "negation_historical_or_comparator_only": 1,
+      "frequency_or_comparator": 1,
+      "not_found": 1
+    },
+    "missing_coverage_axes": []
+  },
+  "passed": false,
+  "validation_status": "FAIL — validation incomplete"
+}
